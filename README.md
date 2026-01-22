@@ -1,94 +1,93 @@
 # OpenCare Hub
 
-OpenCare Hub is the central public documentation, presentation, and visibility layer for the OpenCare healthcare platform in Bangladesh.
+OpenCare Hub is the central public documentation and communication layer for the OpenCare healthcare platform in Bangladesh.
 
-This hub explains what OpenCare is building, why it exists, and how different stakeholders (doctors, patients, partners, investors, contributors) can understand and engage with the platform—without needing access to the core application.
+This hub explains what OpenCare is, why it exists, and how different stakeholders—doctors, patients, partners, investors, and contributors—can understand and engage with the platform.
 
-Live URL:
-https://hub.opencarebd.com
+**Live URL:** https://hub.opencarebd.com
 
 ---
 
-## Why OpenCare Hub Exists
+## Purpose
 
-OpenCare is a multi-module healthcare ecosystem. Explaining it through a single pitch deck or repository README is not enough.
+OpenCare is a multi-module healthcare ecosystem. A single pitch deck or README cannot adequately explain its scope, progress, and vision.
 
 The Hub provides:
 
-- One clear landing page summarizing the platform
-- Audience-specific explanations (doctor, public, investor)
-- Transparent progress tracking (what’s live vs planned)
-- A trusted place for decks, documentation, visuals, and updates
-- A stable URL that can be shared easily (WhatsApp, email, social media)
+- **Clear platform overview** — one landing page summarizing OpenCare
+- **Audience-specific content** — tailored explanations for doctors, patients, investors, and partners
+- **Transparent progress tracking** — what's live, what's planned, and what's next
+- **Centralized resources** — decks, documentation, visuals, and updates in one place
+- **Shareable URL** — easy to distribute via WhatsApp, email, or social media
 
-This hub is not the product itself.  
+**This hub is not the product itself.**  
 It is the source of truth for understanding the product.
 
 ---
 
-## What This Repository Contains
+## Repository Contents
 
-This repository is a pure static website (HTML, CSS, minimal JavaScript).
+This repository contains a pure static website (HTML, CSS, minimal JavaScript).
 
-It includes:
+### Core Sections
 
-### Landing Page
+**Landing Page**
 
 - Platform overview
 - Mission and scope
-- Current progress and milestones
-- Navigation to deeper sections
+- Current milestones
+- Navigation to detailed sections
 
-### Pitch Pages
+**Pitch Pages**
 
 - Investor overview
 - Doctor introduction
 - Public explanation
 
-### Product & Business Docs
+**Product & Business**
 
 - Product vision
 - MVP scope
-- Roadmap (phased)
+- Phased roadmap
 - Monetization model (ads, premium, sponsorships)
 
-### Technical Overview
+**Technical Overview**
 
 - High-level architecture
 - User roles and feature matrix
 - API documentation links
-- Security principles (RBAC, auditability)
+- Security principles (RBAC, audit trails)
 
-### Marketing & Traction
+**Marketing & Traction**
 
-- Facebook, Instagram, LinkedIn, Blog presence
-- Growth placeholders and screenshots
-- What worked, what didn’t, next steps
+- Social media presence (Facebook, Instagram, LinkedIn)
+- Growth metrics and screenshots
+- Lessons learned and next steps
 
-### Trust & Safety
+**Trust & Safety**
 
 - Medical disclaimer
-- Doctor verification approach
+- Doctor verification process
 - Content moderation policy
 - Privacy principles
-- Reporting and escalation
+- Reporting and escalation procedures
 
-### Partner Onboarding
+**Partner Onboarding**
 
 - Doctors
-- Hospitals / Diagnostic centers
+- Hospitals and diagnostic centers
 - Social organizations
-- Requirements and onboarding flow
+- Requirements and onboarding workflows
 
-### Ecosystem Visualization
+**Ecosystem Visualization**
 
-- Visual HTML-based ecosystem diagram showing OpenCare and connected channels
+- Interactive HTML diagram showing OpenCare and connected channels
 
-### Media & Downloads
+**Media & Downloads**
 
 - Brand assets
 - Screenshots
-- Decks and one-pagers
+- Pitch decks and one-pagers
 
 ---
 
@@ -109,44 +108,45 @@ opencare-hub/
 ├── download/
 ├── ecosystem/
 ├── assets/
-│ ├── css/
-│ ├── js/
-│ ├── images/
-│ └── pdf/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── pdf/
 └── README.md
 ```
 
 ---
 
-## Design & Technology Choices
+## Design Principles
 
-- Static HTML by design
+**Static HTML by design**
+
 - No frameworks or build steps
 - Mobile-first and fast loading
-- Minimal JavaScript for metrics injection
-- Easy deployment via Nginx or static hosting
+- Minimal JavaScript (only for metrics injection)
+- Easy deployment via Nginx or any static hosting service
 
-React/Next.js is intentionally not used here. Those are reserved for the main OpenCare application.
+React/Next.js are intentionally not used here. Those technologies are reserved for the main OpenCare application.
 
 ---
 
-## What This Repo Is Not
+## What This Repository Is Not
 
 - Not the OpenCare backend
-- Not the OpenCare frontend app
-- Not a CMS
-- Not a place for sensitive data
+- Not the OpenCare frontend application
+- Not a CMS or dynamic content platform
+- Not a storage location for sensitive data
 
 ---
 
-## How This Fits the OpenCare Ecosystem
+## Ecosystem Position
 
-Layered approach:
+OpenCare follows a layered approach:
 
-- OpenCare App → Healthcare functionality
-- OpenCare APIs → Data and logic
-- OpenCare Hub → Explanation, trust, visibility
-- Social channels → Community and awareness
+- **OpenCare App** — core healthcare functionality
+- **OpenCare APIs** — data and business logic
+- **OpenCare Hub** — public documentation, trust, and visibility
+- **Social channels** — community engagement and awareness
 
 The Hub connects people to the product.
 
@@ -156,21 +156,47 @@ The Hub connects people to the product.
 
 Deployed as a static site.
 
-Recommended domain:
-hub.opencarebd.com
+**Recommended domain:** hub.opencarebd.com
+
+Deploy using:
+
+- Nginx
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static hosting provider
 
 ---
 
 ## Maintainer
 
-OpenCare Team  
+**OpenCare Team**  
 Founder: Sadman Sobhan
 
-Website: https://opencarebd.com
-GitHub: https://github.com/Cipher-Text
+- Website: https://opencarebd.com
+- GitHub: https://github.com/Cipher-Text
 
 ---
 
 ## License
 
 This repository is intended for public documentation and communication purposes.
+
+All content is © OpenCare unless otherwise noted.
+
+---
+
+## Contributing
+
+Contributions to improve documentation clarity, fix typos, or enhance accessibility are welcome.
+
+Please open an issue or submit a pull request.
+
+---
+
+## Contact
+
+For inquiries, partnerships, or support:
+
+- Email: contact@opencarebd.com
+- Visit: https://hub.opencarebd.com

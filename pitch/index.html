@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pitch Hub | Open Care Bangladesh</title>
-  <meta name="description" content="Open Care pitch hub with investor, doctor, and public decks.">
+  <title>Pitch | Open Care Bangladesh</title>
+  <meta name="description" content="Stakeholder pitch views for Open Care Bangladesh.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/pitch-toggle.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -17,7 +18,7 @@
         <span class="brand-mark">OC</span>
         <span>Open Care Hub</span>
       </a>
-            <ul class="nav-links">
+      <ul class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="/pitch/">Pitch</a></li>
         <li><a href="/business/">Business</a></li>
@@ -32,7 +33,6 @@
         <li><a href="/press/">Press</a></li>
         <li><a href="/download/">Download</a></li>
       </ul>
-
     </div>
   </header>
 
@@ -40,40 +40,273 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <h1 class="hero-title">Pitch Decks</h1>
-          <p class="hero-subtitle">Click-through pitch narratives tailored for investors, doctors, and the public. Each deck keeps messaging aligned with Bangladesh healthcare priorities.</p>
-          <div class="cta-row">
-            <a class="button" href="/pitch/investor/">Investor Deck</a>
-            <a class="button secondary" href="/pitch/doctor/">Doctor Deck</a>
+          <h1 class="hero-title">Pitch</h1>
+          <p class="hero-subtitle">Select your view: Investor, Doctor, Hospital</p>
+          <div class="toggle-row" role="tablist" aria-label="Stakeholder view">
+            <button class="toggle-btn" role="tab" data-target="investor" aria-selected="true">Investor</button>
+            <button class="toggle-btn" role="tab" data-target="doctor" aria-selected="false">Doctor</button>
+            <button class="toggle-btn" role="tab" data-target="hospital" aria-selected="false">Hospital</button>
           </div>
+          <div class="cta-row" style="margin-top: 1.5rem;">
+            <a class="button" id="download-link" href="/assets/pdf/opencare-investor-deck.pdf">Download PDF</a>
+            <a class="button secondary" href="/product/">Platform Modules</a>
+          </div>
+          <p class="small" style="margin-top: 0.8rem;">PDF files are updated periodically; the web version is the latest.</p>
         </div>
         <div class="hero-card">
-          <h2 class="section-title">Pitch Menu</h2>
+          <h2 class="section-title">Shared Summary</h2>
           <ul class="list">
-            <li><a href="/pitch/investor/">Investor-focused narrative</a></li>
-            <li><a href="/pitch/doctor/">Doctor engagement narrative</a></li>
-            <li><a href="/pitch/public/">Public awareness narrative</a></li>
+            <li>Bangladesh-focused modular healthcare ecosystem</li>
+            <li>Current progress: 10%</li>
+            <li>Last milestone: Dynamic Advertisement Module MVP complete</li>
+            <li>Next: Video Consultation POC, Mobile architecture, Nurse directory design</li>
           </ul>
-          <p class="small" style="margin-top: 1rem;">PDF downloads are placeholders and can be replaced with final decks.</p>
+          <p style="margin-top: 1rem;"><a href="https://opencarebd.com/">Main Website</a> · <a href="https://api.opencarebd.com/swagger-ui/index.html">API Docs</a></p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section pitch-view" id="view-investor" data-view="investor">
       <div class="container">
-        <h2 class="section-title">Deck Alignment</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>Consistent Vision</h3>
-            <p>All decks reflect the same mission: trusted medical info, access pathways, and community support for Bangladesh.</p>
+        <h2 class="section-title">Investor View</h2>
+        <div class="slide-grid">
+          <div class="slide">
+            <h3>Problem</h3>
+            <ul class="list">
+              <li>Fragmented access to trusted providers in Bangladesh</li>
+              <li>Low visibility for verified doctors and hospitals</li>
+              <li>Limited structured pathways for care navigation</li>
+            </ul>
+            <div class="visual-placeholder">Problem Visual Placeholder</div>
           </div>
-          <div class="card">
-            <h3>Clear Status</h3>
-            <p>Each deck calls out what is live, in progress, and planned without compliance overstatement.</p>
+          <div class="slide">
+            <h3>Why Now</h3>
+            <ul class="list">
+              <li>Growing demand for digital health guidance</li>
+              <li>Provider onboarding readiness increasing</li>
+              <li>Need for trusted, privacy-first platforms</li>
+            </ul>
           </div>
-          <div class="card">
-            <h3>Actionable Next Steps</h3>
-            <p>Decks align with onboarding, pilots, and partnership workflows for targeted audiences.</p>
+          <div class="slide">
+            <h3>Solution (Platform)</h3>
+            <ul class="list">
+              <li>Modular ecosystem for providers and patients</li>
+              <li>Verified directory and service pathways</li>
+              <li>Privacy-first with RBAC and audit trails</li>
+            </ul>
+            <div class="visual-placeholder">Platform Overview Placeholder</div>
+          </div>
+          <div class="slide">
+            <h3>What’s Built (Proof)</h3>
+            <ul class="list">
+              <li>Directory + verification workflows</li>
+              <li>Dynamic Ads Module MVP complete</li>
+              <li>Foundational RBAC roles</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Business Model</h3>
+            <ul class="list">
+              <li>Ads and sponsored placements</li>
+              <li>Premium subscriptions</li>
+              <li>Service partnerships</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Roadmap (Phases)</h3>
+            <ul class="list">
+              <li>Phase 1: Directory + Ads MVP</li>
+              <li>Phase 2: Telehealth POC</li>
+              <li>Phase 3: Records, analytics</li>
+              <li>Phase 4: Community & ecosystem automation</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>GTM (Early Traction)</h3>
+            <ul class="list">
+              <li>Provider onboarding channels (placeholder)</li>
+              <li>Marketing platform visibility (placeholder)</li>
+              <li>Local health campaign pilots (placeholder)</li>
+            </ul>
+            <div class="visual-placeholder">GTM Placeholder</div>
+          </div>
+          <div class="slide">
+            <h3>Team / Execution</h3>
+            <ul class="list">
+              <li>Execution focused on Bangladesh workflows</li>
+              <li>Product + engineering + verification ops</li>
+              <li>Advisory and partner network (placeholder)</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Ask</h3>
+            <ul class="list">
+              <li>Funding for product expansion</li>
+              <li>Verification operations scale</li>
+              <li>Go-to-market rollout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pitch-view" id="view-doctor" data-view="doctor" hidden>
+      <div class="container">
+        <h2 class="section-title">Doctor View</h2>
+        <div class="slide-grid">
+          <div class="slide">
+            <h3>Why OpenCare Exists</h3>
+            <ul class="list">
+              <li>Reduce confusion in provider discovery</li>
+              <li>Build trusted profiles for patients</li>
+              <li>Bangladesh-focused access pathways</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>How Doctor Profiles Work</h3>
+            <ul class="list">
+              <li>Verified listings with specialties</li>
+              <li>Chamber and hospital association</li>
+              <li>Visibility across the directory</li>
+            </ul>
+            <div class="visual-placeholder">Profile Placeholder</div>
+          </div>
+          <div class="slide">
+            <h3>Verification</h3>
+            <ul class="list">
+              <li>BMDC registration and ID checks</li>
+              <li>Manual verification by Open Care team</li>
+              <li>Periodic revalidation and audits</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Appointments & Telehealth (Planned)</h3>
+            <ul class="list">
+              <li>Appointment requests workflow</li>
+              <li>Telehealth video POC planned</li>
+              <li>Secure communications</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Content & Blogging</h3>
+            <ul class="list">
+              <li>Verified doctors can publish articles</li>
+              <li>Health education for local context</li>
+              <li>Moderation and review controls</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Reviews & Reputation</h3>
+            <ul class="list">
+              <li>Moderated patient reviews</li>
+              <li>Report abuse or misinformation</li>
+              <li>Trust signals for verified profiles</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Free vs Premium</h3>
+            <ul class="list">
+              <li>Baseline listing visibility</li>
+              <li>Premium features for outreach (planned)</li>
+              <li>No pricing shown here</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>How to Join</h3>
+            <ul class="list">
+              <li>Submit profile and credentials</li>
+              <li>Verification review</li>
+              <li>Publish and maintain profile</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Safety & Reporting</h3>
+            <ul class="list">
+              <li>Privacy-first access</li>
+              <li>RBAC for role safety</li>
+              <li>Report issues and misinformation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pitch-view" id="view-hospital" data-view="hospital" hidden>
+      <div class="container">
+        <h2 class="section-title">Hospital View</h2>
+        <div class="slide-grid">
+          <div class="slide">
+            <h3>Why Hospitals Join</h3>
+            <ul class="list">
+              <li>Improve discoverability and trust</li>
+              <li>Showcase services and amenities</li>
+              <li>Standardize information access</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Hospital Profile & Amenities</h3>
+            <ul class="list">
+              <li>Facility profile with departments</li>
+              <li>Service listings and contact points</li>
+              <li>Location and operating hours</li>
+            </ul>
+            <div class="visual-placeholder">Hospital Profile Placeholder</div>
+          </div>
+          <div class="slide">
+            <h3>Admin Dashboard Control</h3>
+            <ul class="list">
+              <li>Manage listings and updates</li>
+              <li>Review analytics (planned)</li>
+              <li>Access controls via RBAC</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Staff Listing</h3>
+            <ul class="list">
+              <li>Doctor and nurse profiles</li>
+              <li>Verification alignment</li>
+              <li>Specialty tags for search</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Appointments & Service Requests</h3>
+            <ul class="list">
+              <li>Centralized request intake</li>
+              <li>Patient routing and triage</li>
+              <li>Telehealth coordination (planned)</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Ads / Sponsored Placements</h3>
+            <ul class="list">
+              <li>Ethical visibility options</li>
+              <li>Public health messaging slots</li>
+              <li>Transparent reporting</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Analytics & Reports (Planned)</h3>
+            <ul class="list">
+              <li>Visit and referral metrics</li>
+              <li>Campaign performance tracking</li>
+              <li>Service demand trends</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Onboarding Requirements</h3>
+            <ul class="list">
+              <li>Trade license and credentials</li>
+              <li>Primary admin contact</li>
+              <li>Department and service info</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <h3>Support & Escalation</h3>
+            <ul class="list">
+              <li>Dedicated partner support</li>
+              <li>Issue escalation workflows</li>
+              <li>Policy-driven moderation</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -84,7 +317,7 @@
     <div class="container footer-grid">
       <div>
         <h4>Open Care Bangladesh</h4>
-        <p>Bangladesh-focused digital health ecosystem hub.</p>
+        <p>Stakeholder pitch hub for trusted healthcare access.</p>
       </div>
       <div>
         <h4>Contact</h4>
@@ -93,8 +326,8 @@
       </div>
       <div>
         <h4>Resources</h4>
-        <p><a href="/">Hub Home</a></p>
-        <p><a href="https://opencarebd.com/">Main Website</a></p>
+        <p><a href="/download/">Download Pack</a></p>
+        <p><a href="/product/">Platform Modules</a></p>
       </div>
     </div>
     <div class="container" style="margin-top: 2rem;">
