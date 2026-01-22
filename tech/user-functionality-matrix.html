@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>User Functionality Matrix | Open Care Bangladesh</title>
-  <meta name="description" content="Free vs premium user functionality matrix for Open Care Bangladesh.">
+  <meta name="description" content="Role-based access and feature availability matrix for Open Care Bangladesh.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
         <span class="brand-mark">OC</span>
         <span>Open Care Hub</span>
       </a>
-            <ul class="nav-links">
+      <ul class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="/pitch/">Pitch</a></li>
         <li><a href="/business/">Business</a></li>
@@ -32,7 +32,6 @@
         <li><a href="/press/">Press</a></li>
         <li><a href="/download/">Download</a></li>
       </ul>
-
     </div>
   </header>
 
@@ -41,21 +40,25 @@
       <div class="container hero-grid">
         <div>
           <h1 class="hero-title">User Functionality Matrix</h1>
-          <p class="hero-subtitle">Feature access is controlled by config-driven flags with RBAC in Keycloak. Free access is marked ✅ and Premium access is marked 💎.</p>
-          <div class="cta-row">
-            <a class="button" href="/tech/">Back to Tech Docs</a>
-            <a class="button secondary" href="/business/">Business Plan</a>
-          </div>
+          <p class="hero-subtitle">Feature access in Open Care is controlled through config-driven feature flags and role-based access control (RBAC) using Keycloak.</p>
+          <ul class="list">
+            <li>✅ = Available in Free tier</li>
+            <li>💎 = Available in Premium tier (subscription / paid feature)</li>
+            <li>Availability may change as the platform evolves.</li>
+          </ul>
+          <p class="small" style="margin-top: 1rem;">This matrix helps users, partners, and institutions clearly understand who can do what inside Open Care.</p>
         </div>
         <div class="hero-card">
           <h2 class="section-title">Roles Covered</h2>
           <ul class="list">
             <li>Patient</li>
             <li>Doctor</li>
+            <li>Nurse</li>
             <li>Hospital Admin</li>
             <li>Diagnostic Center Admin</li>
-            <li>Social Org Admin</li>
-            <li>System Admin</li>
+            <li>Social Organization Admin</li>
+            <li>Association Admin</li>
+            <li>System Admin (Internal)</li>
           </ul>
         </div>
       </div>
@@ -63,8 +66,7 @@
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title">Feature Matrix</h2>
-        <p class="section-subtitle">Planned and live features are subject to roadmap adjustments.</p>
+        <h2 class="section-title">Core Access &amp; Discovery</h2>
         <table class="table">
           <thead>
             <tr>
@@ -76,55 +78,438 @@
           </thead>
           <tbody>
             <tr>
-              <td>Verified Directory Access</td>
+              <td>Browse Verified Doctors &amp; Nurses</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Patient</td>
+            </tr>
+            <tr>
+              <td>Browse Hospitals &amp; Diagnostic Centers</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Patient</td>
+            </tr>
+            <tr>
+              <td>View Public Profiles &amp; Reviews</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>All</td>
+            </tr>
+            <tr>
+              <td>Advanced Search &amp; Filters</td>
               <td>✅</td>
               <td>💎</td>
               <td>Patient, Doctor</td>
             </tr>
             <tr>
-              <td>Profile Enhancements</td>
+              <td>Location-based Discovery</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Patient</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Profiles &amp; Visibility</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free (✅)</th>
+              <th>Premium (💎)</th>
+              <th>Primary Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic Profile Listing</td>
+              <td>✅</td>
+              <td>—</td>
+              <td>Doctor, Nurse, Hospital</td>
+            </tr>
+            <tr>
+              <td>Profile Verification Badge</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Doctor, Nurse</td>
+            </tr>
+            <tr>
+              <td>Enhanced Profile (priority listing, highlights)</td>
               <td>—</td>
               <td>💎</td>
               <td>Doctor, Hospital Admin</td>
             </tr>
             <tr>
-              <td>Campaign Manager (Ads)</td>
-              <td>—</td>
+              <td>Association Membership Display</td>
+              <td>✅</td>
               <td>💎</td>
-              <td>Hospital Admin, Diagnostic Center Admin</td>
+              <td>Doctor, Nurse</td>
             </tr>
             <tr>
-              <td>Appointment Requests</td>
+              <td>Sponsored Profile Placement</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Doctor, Hospital</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Appointments &amp; Care Services</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free (✅)</th>
+              <th>Premium (💎)</th>
+              <th>Primary Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Appointment Request (Manual / Online)</td>
               <td>✅</td>
               <td>💎</td>
               <td>Patient, Doctor</td>
             </tr>
             <tr>
-              <td>Telemedicine (Planned)</td>
+              <td>Appointment Management Dashboard</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Doctor, Nurse</td>
+            </tr>
+            <tr>
+              <td>Home Nursing Service Requests</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Patient, Nurse</td>
+            </tr>
+            <tr>
+              <td>Telemedicine (Audio/Video – Planned)</td>
               <td>—</td>
               <td>💎</td>
               <td>Patient, Doctor</td>
             </tr>
             <tr>
-              <td>Community Support Tools</td>
+              <td>Emergency Nursing Requests</td>
               <td>✅</td>
               <td>💎</td>
-              <td>Social Org Admin, System Admin</td>
+              <td>Patient, Nurse</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Health Records &amp; Documentation</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free (✅)</th>
+              <th>Premium (💎)</th>
+              <th>Primary Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Upload &amp; View Medical Reports</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Patient</td>
             </tr>
             <tr>
-              <td>Audit Trail Access</td>
+              <td>Prescription Upload &amp; History</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Doctor, Patient</td>
+            </tr>
+            <tr>
+              <td>Care Notes &amp; Nursing Reports</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Nurse</td>
+            </tr>
+            <tr>
+              <td>Secure Document Storage Quota</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>All</td>
+            </tr>
+            <tr>
+              <td>Family / Caregiver Sharing (Consent-based)</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Patient</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Reviews, Content &amp; Engagement</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free (✅)</th>
+              <th>Premium (💎)</th>
+              <th>Primary Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ratings &amp; Reviews</td>
+              <td>✅</td>
+              <td>—</td>
+              <td>Patient</td>
+            </tr>
+            <tr>
+              <td>Follow Doctors / Nurses / Institutions</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Patient</td>
+            </tr>
+            <tr>
+              <td>Educational Blogs (Read)</td>
+              <td>✅</td>
+              <td>—</td>
+              <td>All</td>
+            </tr>
+            <tr>
+              <td>Blog Writing (Verified Professionals)</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Doctor, Nurse</td>
+            </tr>
+            <tr>
+              <td>Professional Recognition Badges</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Doctor, Nurse</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Community, Social Impact &amp; Support</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free (✅)</th>
+              <th>Premium (💎)</th>
+              <th>Primary Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Medical Fundraising (View &amp; Donate)</td>
+              <td>✅</td>
+              <td>—</td>
+              <td>All</td>
+            </tr>
+            <tr>
+              <td>Fundraising Campaign Creation</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Patient, Org Admin</td>
+            </tr>
+            <tr>
+              <td>Campaign Verification &amp; Moderation</td>
               <td>—</td>
               <td>💎</td>
               <td>System Admin</td>
             </tr>
             <tr>
-              <td>Analytics Dashboard</td>
-              <td>—</td>
+              <td>Volunteer Registration &amp; Matching</td>
+              <td>✅</td>
               <td>💎</td>
-              <td>Hospital Admin, Diagnostic Center Admin</td>
+              <td>Doctor, Nurse, Public</td>
+            </tr>
+            <tr>
+              <td>Health Camps &amp; Events</td>
+              <td>✅</td>
+              <td>💎</td>
+              <td>Organization, Association</td>
             </tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Administration &amp; Institutions</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free (✅)</th>
+              <th>Premium (💎)</th>
+              <th>Primary Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Institution Profile Management</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Hospital, Diagnostic Admin</td>
+            </tr>
+            <tr>
+              <td>Staff Listing (Doctors &amp; Nurses)</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Hospital Admin</td>
+            </tr>
+            <tr>
+              <td>Service &amp; Amenity Management</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Hospital Admin</td>
+            </tr>
+            <tr>
+              <td>Appointment &amp; Revenue Reports</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Hospital Admin</td>
+            </tr>
+            <tr>
+              <td>Geographic &amp; Usage Analytics</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Hospital, Diagnostic Admin</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Advertising, Analytics &amp; Monetization</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free (✅)</th>
+              <th>Premium (💎)</th>
+              <th>Primary Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Contextual Ads (View Only)</td>
+              <td>✅</td>
+              <td>—</td>
+              <td>All</td>
+            </tr>
+            <tr>
+              <td>Campaign Manager (Create &amp; Control Ads)</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Hospital, Diagnostic Admin</td>
+            </tr>
+            <tr>
+              <td>Sponsored Content &amp; Placement</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Institutions</td>
+            </tr>
+            <tr>
+              <td>Platform Analytics Dashboard</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>Admin Roles</td>
+            </tr>
+            <tr>
+              <td>Audit Logs &amp; Activity Tracking</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>System Admin</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">System &amp; Governance (Internal)</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Free (✅)</th>
+              <th>Premium (💎)</th>
+              <th>Primary Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Role &amp; Permission Management</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>System Admin</td>
+            </tr>
+            <tr>
+              <td>Feature Flag &amp; Config Control</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>System Admin</td>
+            </tr>
+            <tr>
+              <td>Content Moderation &amp; Reporting</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>System Admin</td>
+            </tr>
+            <tr>
+              <td>Emergency Escalation Oversight</td>
+              <td>—</td>
+              <td>💎</td>
+              <td>System Admin</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card">
+          <h3>Important Notes</h3>
+          <ul class="list">
+            <li>Free access ensures basic healthcare discovery and participation.</li>
+            <li>Premium features support sustainability and professional visibility.</li>
+            <li>Availability may vary by role, location, and rollout phase.</li>
+            <li>Sensitive actions are protected by RBAC, audit logs, and admin workflows.</li>
+          </ul>
+        </div>
+        <div class="highlight">
+          <h3>Need More Details?</h3>
+          <ul class="list">
+            <li><a href="/tech/">Technical Overview</a></li>
+            <li><a href="/product/">Product Roadmap</a></li>
+            <li><a href="/trust/">Trust &amp; Safety</a></li>
+            <li><a href="/partners/">Partner Onboarding</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
@@ -133,7 +518,7 @@
     <div class="container footer-grid">
       <div>
         <h4>Open Care Bangladesh</h4>
-        <p>Configurable access tiers with RBAC controls.</p>
+        <p>Configurable access tiers with role-based controls.</p>
       </div>
       <div>
         <h4>Contact</h4>
@@ -142,7 +527,7 @@
       </div>
       <div>
         <h4>Resources</h4>
-        <p><a href="/tech/">Tech Overview</a></p>
+        <p><a href="/tech/">Technical Overview</a></p>
         <p><a href="/product/">Product Roadmap</a></p>
       </div>
     </div>

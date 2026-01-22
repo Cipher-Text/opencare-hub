@@ -10,30 +10,30 @@ window.OPENCARE_DATA = {
     doctorsCount: "—",
     hospitalsCount: "—",
     institutionsCount: "—",
-    fbFollowers: "—",
-    igFollowers: "—",
-    linkedinFollowers: "—",
-    blogPosts: "—"
+    fbFollowers: "1,100",
+    igFollowers: "2",
+    linkedinFollowers: "33",
+    blogPosts: "20"
   },
   channels: {
     facebook: {
       name: "Facebook",
-      followers: "—",
+      followers: "1,100",
       status: "In Progress"
     },
     instagram: {
       name: "Instagram",
-      followers: "—",
+      followers: "2",
       status: "Planned"
     },
     linkedin: {
       name: "LinkedIn",
-      followers: "—",
+      followers: "33",
       status: "Planned"
     },
     blog: {
       name: "Blog",
-      followers: "—",
+      followers: "20 posts",
       status: "In Progress"
     }
   },
