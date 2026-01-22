@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical Docs | Open Care Bangladesh</title>
+  <meta name="description" content="Technical documentation and architecture overview for Open Care Bangladesh.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="/">
+        <span class="brand-mark">OC</span>
+        <span>Open Care Hub</span>
+      </a>
+            <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/pitch/">Pitch</a></li>
+        <li><a href="/business/">Business</a></li>
+        <li><a href="/product/">Product</a></li>
+        <li><a href="/tech/">Tech</a></li>
+        <li><a href="/marketing/">Marketing</a></li>
+        <li><a href="/media/">Media</a></li>
+        <li><a href="/ecosystem/">Ecosystem</a></li>
+        <li><a href="/trust/">Trust</a></li>
+        <li><a href="/traction/">Traction</a></li>
+        <li><a href="/partners/">Partners</a></li>
+        <li><a href="/press/">Press</a></li>
+        <li><a href="/download/">Download</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 class="hero-title">Technical Documentation</h1>
+          <p class="hero-subtitle">Open Care is built with a scalable, privacy-first architecture using modern tooling and access control patterns.</p>
+          <div class="cta-row">
+            <a class="button" href="/tech/user-functionality-matrix.html">User Functionality Matrix</a>
+            <a class="button secondary" href="https://api.opencarebd.com/swagger-ui/index.html">API Docs</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2 class="section-title">Stack Badges</h2>
+          <div class="badge-row">
+            <span class="badge">Next.js / React</span>
+            <span class="badge">Spring Boot</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">Redis</span>
+            <span class="badge">Keycloak</span>
+            <span class="badge">MinIO</span>
+            <span class="badge">Kubernetes (later)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card">
+          <h3>Architecture Overview</h3>
+          <ul class="list">
+            <li>Frontend: React-based UI with modular component library</li>
+            <li>Backend: Spring Boot services with REST APIs</li>
+            <li>Identity: Keycloak for RBAC, SSO, and audit-ready access control</li>
+            <li>Storage: PostgreSQL + Redis + MinIO for documents and media</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Documentation Links</h3>
+          <ul class="list">
+            <li><a href="/tech/user-functionality-matrix.html">User Functionality Matrix (Free vs Premium)</a></li>
+            <li><a href="/tech/">Architecture Overview (this page)</a></li>
+            <li><a href="https://api.opencarebd.com/swagger-ui/index.html">API Documentation (Swagger)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Security & Governance</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Privacy-first</h3>
+            <p>Data minimization, explicit consent, and permissioned access per role.</p>
+          </div>
+          <div class="card">
+            <h3>RBAC</h3>
+            <p>Role-based access control with feature flags to activate premium workflows.</p>
+          </div>
+          <div class="card">
+            <h3>Audit Trail</h3>
+            <p>Change logging and traceable operations across critical workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Open Care Bangladesh</h4>
+        <p>Trusted, secure, and modular digital health technology.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@opencarebd.com</p>
+        <p>Tech: tech@opencarebd.com</p>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <p><a href="/tech/user-functionality-matrix.html">User Functionality Matrix</a></p>
+        <p><a href="/product/">Product Vision</a></p>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 2rem;">
+      <p class="small">© 2026 Open Care Bangladesh. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
