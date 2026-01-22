@@ -36,20 +36,20 @@ This repository contains a pure static website (HTML, CSS, minimal JavaScript).
 - Platform overview
 - Mission and scope
 - Current milestones
+- Blood donation and ambulance integration highlights
 - Navigation to detailed sections
 
-**Pitch Pages**
+**Pitch Page**
 
-- Investor overview
-- Doctor introduction
-- Public explanation
+- Single stakeholder toggle (Investor / Doctor / Hospital)
+- Downloadable PDFs per stakeholder
 
 **Product & Business**
 
-- Product vision
-- MVP scope
-- Phased roadmap
-- Monetization model (ads, premium, sponsorships)
+- Product vision (revised)
+- Differentiators and roadmap
+- Monetization model (ads, premium, partnerships)
+- Risk/mitigation and success metrics
 
 **Technical Overview**
 
@@ -60,7 +60,7 @@ This repository contains a pure static website (HTML, CSS, minimal JavaScript).
 
 **Marketing & Traction**
 
-- Social media presence (Facebook, Instagram, LinkedIn)
+- Social media presence and follower counts
 - Growth metrics and screenshots
 - Lessons learned and next steps
 
@@ -81,7 +81,7 @@ This repository contains a pure static website (HTML, CSS, minimal JavaScript).
 
 **Ecosystem Visualization**
 
-- Interactive HTML diagram showing OpenCare and connected channels
+- Ecosystem overview, partner types, community impact
 
 **Media & Downloads**
 
@@ -123,7 +123,7 @@ opencare-hub/
 
 - No frameworks or build steps
 - Mobile-first and fast loading
-- Minimal JavaScript (only for metrics injection)
+- Minimal JavaScript (metrics injection + pitch toggle)
 - Easy deployment via Nginx or any static hosting service
 
 React/Next.js are intentionally not used here. Those technologies are reserved for the main OpenCare application.
@@ -198,5 +198,5 @@ Please open an issue or submit a pull request.
 
 For inquiries, partnerships, or support:
 
-- Email: contact@opencarebd.com
+- Email: hello@opencarebd.com
 - Visit: https://hub.opencarebd.com
