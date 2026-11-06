@@ -105,13 +105,17 @@ opencare-hub/
 ├── traction/
 ├── partners/
 ├── press/
+├── media/
 ├── download/
 ├── ecosystem/
 ├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   └── pdf/
+│   ├── css/style.css
+│   ├── js/            # data.js (metrics), pitch-toggle.js
+│   ├── images/        # logo, og, screenshots, marketing, ecosystem
+│   └── pdf/           # stakeholder decks and kits, brand kit zip
+├── CNAME              # hub.opencarebd.com (GitHub Pages)
+├── robots.txt, sitemap.xml
+├── LICENSE
 └── README.md
 ```
 
@@ -163,8 +167,10 @@ Deploy using:
 - Nginx
 - Vercel
 - Netlify
-- GitHub Pages
+- GitHub Pages (a `CNAME` file for `hub.opencarebd.com` is included)
 - Any static hosting provider
+
+Keep `sitemap.xml` in sync when adding or removing pages.
 
 ---
 
@@ -180,9 +186,7 @@ Founder: Sadman Sobhan
 
 ## License
 
-This repository is intended for public documentation and communication purposes.
-
-All content is © OpenCare unless otherwise noted.
+Released under the MIT License (see `LICENSE`). Brand names, logos and pitch materials remain © Open Care Bangladesh unless otherwise noted.
 
 ---
 

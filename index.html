@@ -50,7 +50,7 @@
           </div>
           <h1 class="hero-title">Open Care</h1>
           <p class="hero-subtitle">Modular healthcare information & service platform for Bangladesh.</p>
-          <p class="small">Status: Active Development | Started: 2024-07-07 | Last Updated: 2025-06-26</p>
+          <p class="small">Status: Active Development | Started: 2024-07-07 | Last Updated: 2026-11-06</p>
           <div class="cta-row" style="margin-top: 1.5rem;">
             <a class="button" href="#modules">Platform Modules</a>
             <a class="button secondary" href="#progress">Progress</a>
@@ -61,16 +61,16 @@
           <h2 class="section-title">Progress Snapshot</h2>
           <div class="metrics">
             <div class="metric">
-              <div class="small">Overall Progress</div>
-              <div class="metric-value" id="metric-progress">10%</div>
+              <div class="small">Roadmap Position</div>
+              <div class="metric-value" id="metric-progress">Phase 2 of 4</div>
             </div>
             <div class="metric">
               <div class="small">Current Milestone</div>
-              <div class="metric-value" id="metric-current">Advertisement System MVP complete</div>
+              <div class="metric-value" id="metric-current">Core directory live; Phase 2 care services built, not yet tried with real logins</div>
             </div>
             <div class="metric">
               <div class="small">Next Milestone</div>
-              <div class="metric-value" id="metric-next">Video Consultation POC</div>
+              <div class="metric-value" id="metric-next">Try Phase 2 with real logins and databases, then real SMS and payments</div>
             </div>
           </div>
           <p class="small" style="margin-top: 1rem;">Last updated: <span id="last-updated">—</span></p>
@@ -85,27 +85,27 @@
         <div class="grid-3">
           <div class="card">
             <h3>Professionals</h3>
-            <p>Doctors, Nurses</p>
+            <p>Doctors, Nurses, Nutritionists</p>
           </div>
           <div class="card">
             <h3>Institutions</h3>
-            <p>Hospitals, Diagnostics, Medical Colleges, Pharmacies</p>
+            <p>Hospitals, Clinics, Diagnostic Centres, Blood Banks, Medical Institutions, Ambulances</p>
           </div>
           <div class="card">
             <h3>Services</h3>
-            <p>Appointments, Home Nursing, Telehealth (planned), Emergency support</p>
+            <p>Chamber appointments, Prescriptions with patient consent, Ambulance directory. Home nursing and telemedicine are planned.</p>
           </div>
           <div class="card">
             <h3>Information</h3>
-            <p>Medical content, reviews, advanced search</p>
+            <p>Public search by district, upazila and union, doctor reviews, a health blog in English and Bangla</p>
           </div>
           <div class="card">
             <h3>Social</h3>
-            <p>Fundraising, volunteer services, health campaigns</p>
+            <p>Social organisations and associations, blood donors who opt in, contribution points. Fundraising and health campaigns are planned.</p>
           </div>
           <div class="card">
             <h3>Business</h3>
-            <p>Ads, premium, dynamic configuration</p>
+            <p>Free, Plus and Pro plans (nothing is sold yet), one sponsored ad slot</p>
           </div>
         </div>
       </div>
@@ -118,68 +118,68 @@
         <div class="grid-3">
           <div class="card">
             <h3>Directory &amp; Profiles</h3>
-            <p>Verified provider and institution listings.</p>
+            <p>Provider and institution listings: doctors, nurses, nutritionists, hospitals, ambulances, institutions. Records are imported, many not yet verified.</p>
             <p><span class="status live">Live</span></p>
             <p><a href="/product/">Learn more →</a></p>
           </div>
           <div class="card">
             <h3>Authentication &amp; Roles</h3>
-            <p>Account access with RBAC and role scopes.</p>
-            <p><span class="status live">Live</span></p>
+            <p>Keycloak sign-in, roles and permissions, organisation workspaces. Not yet tried with the real Keycloak server.</p>
+            <p><span class="status progress">In Progress</span></p>
             <p><a href="/tech/">Learn more →</a></p>
           </div>
           <div class="card">
             <h3>Role-based Dashboards</h3>
-            <p>Separate views for patients, providers, and admins.</p>
+            <p>One console for staff and professionals; a practice dashboard for doctors; a workspace for each organisation role.</p>
             <p><span class="status progress">In Progress</span></p>
             <p><a href="/product/">Learn more →</a></p>
           </div>
           <div class="card">
             <h3>Appointments &amp; Care Services</h3>
-            <p>Scheduling, service routing, and care requests.</p>
+            <p>Chamber visits by request with confirm, decline, cancel and reminders. Hospital and online sessions are not built.</p>
             <p><span class="status progress">In Progress</span></p>
             <p><a href="/product/">Learn more →</a></p>
           </div>
           <div class="card">
-            <h3>Health Records &amp; Documentation</h3>
-            <p>Reports, prescriptions, and patient documents.</p>
-            <p><span class="status planned">Planned</span></p>
+            <h3>Health Records &amp; Prescriptions</h3>
+            <p>Doctors write prescriptions for patients who consent; patients view them; health vitals can be recorded. Full patient health records are planned.</p>
+            <p><span class="status progress">In Progress</span></p>
             <p><a href="/tech/">Learn more →</a></p>
           </div>
           <div class="card">
             <h3>Reviews, Ratings &amp; Content</h3>
-            <p>Moderated public feedback and health content.</p>
+            <p>Doctor reviews from patients who were seen, checked by a moderator. A health blog. Hospital reviews are not built.</p>
             <p><span class="status progress">In Progress</span></p>
             <p><a href="/trust/">Learn more →</a></p>
           </div>
           <div class="card">
             <h3>Fundraising &amp; Social Support</h3>
-            <p>Community support and emergency funds.</p>
+            <p>Community support and emergency funds. Not designed or built yet.</p>
             <p><span class="status planned">Planned</span></p>
             <p><a href="/ecosystem/">Learn more →</a></p>
           </div>
           <div class="card">
             <h3>Blood Donation Network</h3>
-            <p>Donor discovery, requests, and nonprofit coordination.</p>
-            <p><span class="status planned">Planned</span></p>
+            <p>Donors opt in with consent; the donor list needs a Plus or Pro plan; staff manage requisitions. No public request page or donor matching yet.</p>
+            <p><span class="status progress">In Progress</span></p>
             <p><a href="/ecosystem/">Learn more →</a></p>
           </div>
           <div class="card">
-            <h3>Ambulance Info &amp; Integration</h3>
-            <p>Verified ambulance directories and partner integrations.</p>
-            <p><span class="status planned">Planned</span></p>
+            <h3>Ambulance Directory</h3>
+            <p>A public list of ambulance services to call, with a 999 emergency button. Partner integrations are planned.</p>
+            <p><span class="status progress">In Progress</span></p>
             <p><a href="/ecosystem/">Learn more →</a></p>
           </div>
           <div class="card">
-            <h3>Dynamic Ads &amp; Monetization</h3>
-            <p>Campaign management for providers and orgs.</p>
-            <p><span class="status live">MVP Complete</span></p>
+            <h3>Ads &amp; Plans</h3>
+            <p>Staff manage ads; one labelled sponsored slot on the home page counts views and clicks. Free, Plus and Pro plans exist; nothing is charged yet.</p>
+            <p><span class="status progress">In Progress</span></p>
             <p><a href="/product/">Learn more →</a></p>
           </div>
           <div class="card">
             <h3>Community, Associations &amp; Volunteers</h3>
-            <p>Association listings and volunteer coordination.</p>
-            <p><span class="status planned">Planned</span></p>
+            <p>Association and social organisation listings, managed by staff and their admins. Volunteers, campaigns and events are planned.</p>
+            <p><span class="status progress">In Progress</span></p>
             <p><a href="/ecosystem/">Learn more →</a></p>
           </div>
         </div>
@@ -207,21 +207,14 @@
     <section class="section" id="implementation">
       <div class="container">
         <h2 class="section-title">Implementation Order</h2>
-        <p class="section-subtitle">Suggested order of implementation for clear execution.</p>
+        <p class="section-subtitle">The order follows the platform principle: trust before revenue.</p>
         <ol class="list">
-          <li>Identity &amp; role definitions</li>
-          <li>Provider &amp; institution directory</li>
-          <li>Verification workflows</li>
-          <li>Role-based dashboards</li>
-          <li>Appointments &amp; service requests</li>
-          <li>Reviews &amp; content moderation</li>
-          <li>Ads module (MVP complete)</li>
-          <li>Community &amp; volunteer modules</li>
-          <li>Health records &amp; documentation</li>
-          <li>Telehealth POC</li>
-          <li>Mobile architecture &amp; data sync</li>
-          <li>Analytics &amp; reporting
-          </li>
+          <li>Safe to ship: security, backups, honest data</li>
+          <li>Trust foundation: roles, verification, reviews</li>
+          <li>Value people use: appointments, prescriptions, notifications, plans</li>
+          <li>Grow and tighten: Bangla, search, analytics</li>
+          <li>Money: payments and paid plans, only after the features they sell are built</li>
+          <li>Later: telemedicine, mobile app, microservices</li>
         </ol>
       </div>
     </section>
@@ -232,17 +225,17 @@
           <h2 class="section-title">Progress Snapshot</h2>
           <div class="metrics">
             <div class="metric">
-              <div class="small">Overall Progress</div>
-              <div class="metric-value" id="metric-progress-2">10%</div>
+              <div class="small">Roadmap Position</div>
+              <div class="metric-value" id="metric-progress-2">Phase 2 of 4</div>
             </div>
             <div class="metric">
               <div class="small">Last Milestone</div>
-              <div class="metric-value" id="metric-current-2">Dynamic Advertisement Module MVP done</div>
+              <div class="metric-value" id="metric-current-2">Core directory live; Phase 2 care services built, not yet tried with real logins</div>
             </div>
             <div class="metric">
               <div class="small">Next Steps</div>
-              <div class="metric-value" id="metric-next-2">Video Call POC</div>
-              <div class="small" style="margin-top: 0.6rem;">Mobile architecture, Nurse Directory design</div>
+              <div class="metric-value" id="metric-next-2">Try Phase 2 with real logins and databases, then real SMS and payments</div>
+              <div class="small" style="margin-top: 0.6rem;">Remaining: hospital and online appointment sessions, hospital reviews, patient health records. Telemedicine and the mobile app come later.</div>
             </div>
           </div>
           <p class="small" style="margin-top: 1rem;">Last updated: <span id="last-updated-2">—</span></p>
@@ -297,9 +290,8 @@
           <span class="badge">Next.js / React</span>
           <span class="badge">Spring Boot</span>
           <span class="badge">PostgreSQL</span>
-          <span class="badge">Redis</span>
           <span class="badge">Keycloak</span>
-          <span class="badge">MinIO</span>
+          <span class="badge">MinIO (dev) / Cloudflare R2 (prod)</span>
           <span class="badge">Docker</span>
           <span class="badge">Kubernetes (later)</span>
         </div>
@@ -372,7 +364,7 @@
       const nextEl = document.getElementById("metric-next");
       const updatedEl = document.getElementById("last-updated");
 
-      if (progressEl) progressEl.textContent = `${data.overallProgress}%`;
+      if (progressEl) progressEl.textContent = data.overallProgress;
       if (currentEl) currentEl.textContent = data.milestones?.current || data.currentMilestone;
       if (nextEl) nextEl.textContent = data.milestones?.next || data.nextMilestone;
       if (updatedEl) updatedEl.textContent = data.lastUpdated;
@@ -382,7 +374,7 @@
       const nextEl2 = document.getElementById("metric-next-2");
       const updatedEl2 = document.getElementById("last-updated-2");
 
-      if (progressEl2) progressEl2.textContent = `${data.overallProgress}%`;
+      if (progressEl2) progressEl2.textContent = data.overallProgress;
       if (currentEl2) currentEl2.textContent = data.milestones?.current || data.currentMilestone;
       if (nextEl2) nextEl2.textContent = data.milestones?.next || data.nextMilestone;
       if (updatedEl2) updatedEl2.textContent = data.lastUpdated;

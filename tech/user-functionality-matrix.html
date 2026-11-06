@@ -43,7 +43,8 @@
           <p class="hero-subtitle">Feature access in Open Care is controlled through config-driven feature flags and role-based access control (RBAC) using Keycloak.</p>
           <ul class="list">
             <li>✅ = Available in Free tier</li>
-            <li>💎 = Available in Premium tier (subscription / paid feature)</li>
+            <li>💎 = Planned for the paid plans (Plus and Pro)</li>
+            <li>The tables below show the intended plan design, not what is built. See "What is built today" first.</li>
             <li>Availability may change as the platform evolves.</li>
           </ul>
           <p class="small" style="margin-top: 1rem;">This matrix helps users, partners, and institutions clearly understand who can do what inside Open Care.</p>
@@ -61,6 +62,34 @@
             <li>System Admin (Internal)</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What is built today</h2>
+        <p class="section-subtitle">Status as of November 6, 2026, from the platform documentation. Built means the code exists; most Phase 2 features have not yet been tried in a browser with a real login or against a production database.</p>
+        <table class="table">
+          <thead>
+            <tr><th>Feature</th><th>Status</th><th>Note</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Public directory: doctors, hospitals, ambulances, institutions</td><td>Live</td><td>Search by district, upazila, union, type and speciality; English and Bangla for the main pages</td></tr>
+            <tr><td>Nurse and nutritionist directories</td><td>Built</td><td>Public pages, claim and verification by documents</td></tr>
+            <tr><td>Doctor verification</td><td>Built</td><td>Documents, staff review, manual BMDC register check</td></tr>
+            <tr><td>Chamber appointments</td><td>Built</td><td>By request: confirm, decline, cancel, reminders. Hospital and online sessions are not built</td></tr>
+            <tr><td>Doctor reviews</td><td>Built</td><td>Only patients who were seen; moderated. Hospital reviews are not built</td></tr>
+            <tr><td>Prescriptions with patient consent</td><td>Built</td><td>Doctor writes, patient views. Sharing between doctors and SMS delivery are not built</td></tr>
+            <tr><td>Health vitals</td><td>Built</td><td>Record, list, change and delete readings, with a trend chart</td></tr>
+            <tr><td>Blood donors</td><td>Built</td><td>Donors opt in; the donor list needs a Plus or Pro plan. No public request page</td></tr>
+            <tr><td>Notifications</td><td>Built</td><td>In-app inbox and email; the SMS sender has never sent a real message</td></tr>
+            <tr><td>Plans: Free, Plus, Pro</td><td>Partly built</td><td>Plans exist; nothing is sold; prices are not decided; few paid features exist yet</td></tr>
+            <tr><td>Ads</td><td>Built</td><td>Staff manage ads; one labelled sponsored slot on the home page</td></tr>
+            <tr><td>Blog</td><td>Built</td><td>Staff write; doctor writing is planned</td></tr>
+            <tr><td>Contribution points and levels</td><td>Partly built</td><td>Points for proposing records; reviews and referrals not wired</td></tr>
+            <tr><td>Video consultation, payments, fundraising, campaigns and events, mobile app</td><td>Not started</td><td>Planned for later phases</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -132,9 +161,9 @@
               <td>Doctor, Nurse, Hospital</td>
             </tr>
             <tr>
-              <td>Profile Verification Badge</td>
+              <td>Profile Verification Badge (the verification workflow itself is free)</td>
+              <td>✅</td>
               <td>—</td>
-              <td>💎</td>
               <td>Doctor, Nurse</td>
             </tr>
             <tr>
@@ -186,7 +215,7 @@
               <td>Doctor, Nurse</td>
             </tr>
             <tr>
-              <td>Home Nursing Service Requests</td>
+              <td>Home Nursing Service Requests (planned)</td>
               <td>✅</td>
               <td>💎</td>
               <td>Patient, Nurse</td>

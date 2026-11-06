@@ -45,7 +45,7 @@
             <span class="badge">Bangladesh Focus</span>
           </div>
           <h1 class="hero-title">Early Traction & Proof</h1>
-          <p class="hero-subtitle">Signals of progress, evidence placeholders, and pilot readiness for the Bangladesh healthcare ecosystem.</p>
+          <p class="hero-subtitle">Signals of progress, evidence placeholders, and pilot readiness for the Bangladesh healthcare ecosystem. Directory counts are imported records, and many are not yet verified.</p>
           <div class="cta-row">
             <a class="button" href="/download/">Download Pack</a>
             <a class="button secondary" href="/partners/">Partner With Us</a>
@@ -55,19 +55,19 @@
           <h2 class="section-title">What We Have Today</h2>
           <div class="metrics">
             <div class="metric">
-              <div class="small">Platform Progress</div>
-              <div class="metric-value" id="metric-progress">10%</div>
+              <div class="small">Roadmap Position</div>
+              <div class="metric-value" id="metric-progress">Phase 2 of 4</div>
             </div>
             <div class="metric">
-              <div class="small">Ads Module</div>
-              <div class="metric-value">MVP complete</div>
+              <div class="small">Care Services</div>
+              <div class="metric-value">Built, not yet tried with real logins</div>
             </div>
             <div class="metric">
-              <div class="small">Doctors Collected</div>
+              <div class="small">Doctors Listed</div>
               <div class="metric-value" id="metric-doctors">—</div>
             </div>
             <div class="metric">
-              <div class="small">Hospitals Collected</div>
+              <div class="small">Facilities Listed</div>
               <div class="metric-value" id="metric-hospitals">—</div>
             </div>
             <div class="metric">
@@ -181,7 +181,7 @@
       const institutionsEl = document.getElementById("metric-institutions");
       const updatedEl = document.getElementById("metric-updated");
 
-      if (progressEl) progressEl.textContent = `${data.overallProgress}%`;
+      if (progressEl) progressEl.textContent = data.overallProgress;
       if (doctorsEl) doctorsEl.textContent = data.metrics?.doctorsCount ?? "—";
       if (hospitalsEl) hospitalsEl.textContent = data.metrics?.hospitalsCount ?? "—";
       if (institutionsEl) institutionsEl.textContent = data.metrics?.institutionsCount ?? "—";

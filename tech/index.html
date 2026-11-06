@@ -53,9 +53,9 @@
             <span class="badge">Next.js / React</span>
             <span class="badge">Spring Boot</span>
             <span class="badge">PostgreSQL</span>
-            <span class="badge">Redis</span>
             <span class="badge">Keycloak</span>
-            <span class="badge">MinIO</span>
+            <span class="badge">MinIO (dev) / Cloudflare R2 (prod)</span>
+            <span class="badge">Docker</span>
             <span class="badge">Kubernetes (later)</span>
           </div>
         </div>
@@ -67,16 +67,16 @@
         <div class="card">
           <h3>Architecture Overview</h3>
           <ul class="list">
-            <li>Frontend: React-based UI with modular component library</li>
-            <li>Backend: Spring Boot services with REST APIs</li>
+            <li>Frontend: Next.js 15 and React 19 web app, in English and Bangla</li>
+            <li>Backend: one Spring Boot 3.5 application (Java 21) with REST APIs; an intentional monolith at this stage</li>
             <li>Identity: Keycloak for RBAC, SSO, and audit-ready access control</li>
-            <li>Storage: PostgreSQL + Redis + MinIO for documents and media</li>
+            <li>Storage: PostgreSQL (Liquibase migrations, built-in text search) and S3-compatible file storage: MinIO in development, Cloudflare R2 in production</li>
           </ul>
         </div>
         <div class="card">
           <h3>Documentation Links</h3>
           <ul class="list">
-            <li><a href="/tech/user-functionality-matrix.html">User Functionality Matrix (Free vs Premium)</a></li>
+            <li><a href="/tech/user-functionality-matrix.html">User Functionality Matrix (what is built, by role)</a></li>
             <li><a href="/tech/">Architecture Overview (this page)</a></li>
             <li><a href="https://api.opencarebd.com/swagger-ui/index.html">API Documentation (Swagger)</a></li>
           </ul>
@@ -94,7 +94,7 @@
           </div>
           <div class="card">
             <h3>RBAC</h3>
-            <p>Role-based access control with feature flags to activate premium workflows.</p>
+            <p>Role-based access control with Keycloak groups and a staff screen for role permissions. Plan features (Free, Plus, Pro) switch on paid workflows.</p>
           </div>
           <div class="card">
             <h3>Audit Trail</h3>

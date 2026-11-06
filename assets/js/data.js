@@ -1,14 +1,14 @@
 window.OPENCARE_DATA = {
-  overallProgress: 10,
-  currentMilestone: "Advertisement System MVP complete",
-  nextMilestone: "Video Consultation POC",
+  overallProgress: "Phase 2 of 4",
+  currentMilestone: "Core directory live; Phase 2 care services built, not yet tried with real logins",
+  nextMilestone: "Try Phase 2 with real logins and databases, then real SMS and payments",
   milestones: {
-    current: "Advertisement System MVP complete",
-    next: "Video Consultation POC"
+    current: "Core directory live; Phase 2 care services built, not yet tried with real logins",
+    next: "Try Phase 2 with real logins and databases, then real SMS and payments"
   },
   metrics: {
-    doctorsCount: "—",
-    hospitalsCount: "—",
+    doctorsCount: "About 1,240 (imported)",
+    hospitalsCount: "About 38,900 facilities (imported)",
     institutionsCount: "—",
     fbFollowers: "1,100",
     igFollowers: "2",
@@ -37,5 +37,5 @@ window.OPENCARE_DATA = {
       status: "In Progress"
     }
   },
-  lastUpdated: "2026-01-22"
+  lastUpdated: "2026-11-06"
 };
